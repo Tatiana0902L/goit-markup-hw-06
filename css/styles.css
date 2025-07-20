@@ -154,10 +154,13 @@ button {
     display: block;
     padding: 24px 0;
     position: relative;
+    text-decoration: none;
+    border-bottom: 4px solid #404bbf;
+    padding-bottom: 20px;
+    color: #404bbf;
   }
 
   .link {
-    text-decoration: none;
     padding: 24px 0;
   }
 
@@ -287,7 +290,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
   margin-top: 24px;
 }
 
@@ -311,6 +313,7 @@ button {
 
 .cnt-mob {
   font-style: normal;
+  margin-top: auto;
 }
 
 .cnt-address-mob {
@@ -319,6 +322,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -489,12 +493,12 @@ button {
 
 .second {
   background-color: #fff;
+  padding: 96px 16px;
 }
 
 .second-page-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 96px 16px;
   gap: 72px;
 }
 
@@ -517,6 +521,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .second-page {
+    text-align: start;
+  }
+
   .second-page-list {
     display: flex;
     align-items: flex-start;
@@ -532,6 +540,11 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .second {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .second-page-list {
     display: flex;
     flex-wrap: wrap;
@@ -559,6 +572,10 @@ button {
     font-size: 20px;
     line-height: 1.2;
   }
+
+  .second-page-text {
+    font-weight: 400px;
+  }
 }
 
 .third-page {
@@ -581,6 +598,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .worker {
@@ -639,14 +657,17 @@ button {
 @media screen and (min-width: 768px) {
   .third-page {
     background-color: #fff;
+  }
+
+  .third-container {
     margin-left: 108px;
     margin-right: 108px;
   }
 
   .worker-list {
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
   }
   .worker {
     flex-basis: calc((100% - 24px) / 2);
@@ -656,6 +677,11 @@ button {
 @media screen and (min-width: 1158px) {
   .third-page {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .third-container {
     margin: 0 auto;
   }
 
@@ -717,15 +743,10 @@ button {
 .portfolio-front {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 360px;
 }
 
 .portfolio-front img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .portfolio-back-text {
@@ -789,8 +810,13 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .fourth {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .portfolio-item {
-    flex-basis: calc((100% - 96px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 
@@ -973,7 +999,17 @@ button {
   }
 
   .footer-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 264px;
+  }
+
+  .footer-social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 208px;
   }
 
   .subscribe {
@@ -1005,10 +1041,12 @@ button {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: unset;
   }
 
   .footer-text-block {
     max-width: 264px;
+    margin-right: 120px;
   }
 
   .footer-logo {
@@ -1020,6 +1058,7 @@ button {
     flex-direction: column;
     align-items: flex-start;
     max-width: 208px;
+    margin-right: 80px;
   }
 
   .subscribe {
